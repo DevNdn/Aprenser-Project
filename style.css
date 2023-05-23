@@ -3,7 +3,11 @@
 :root {
   --font-color-link: yellow;
   --font-color-text: black;
-
+  --font-size-big: clamp(2rem, 4vw, 4rem);
+  --font-size-h3: clamp(1rem, 2vw, 2rem);
+  --font-size-p: clamp(.5rem, 1.2vw, 1.5rem);
+  --font-size-p3: clamp(.5rem, 1.1vw, 1.4rem);
+  --font-family-all: sans-serif;
 }
 
 * {
@@ -15,6 +19,7 @@ body {
   width: 100vw;
   height: 100vh;
   font-size: 62.5%;
+  font-family: var(--font-family-all);
 }
 
 header {
@@ -97,7 +102,7 @@ header {
 #header-content-main > p {
   padding: 0.2rem;
   margin-bottom: .5rem;
-  font-size: clamp(2rem, 4vw, 4rem);
+  font-size: var(--font-size-big);
   display: block;
 }
 
@@ -106,7 +111,7 @@ header {
   background-color: yellow;
   border-radius: .5rem;
   text-decoration: none;
-  font-size: clamp(.8rem, 1.5vw, 3rem);
+  font-size: clamp(.8rem, 1.2vw, 2.5rem);
   font-weight: bold;
   padding: 1rem 3rem 1rem 3rem;
   margin-top: .2rem;
@@ -121,4 +126,234 @@ header {
   font-weight: bolder;
   box-shadow: inset 0px 0px 3px 3px rgba(255, 255, 255, 0.705);
 
+}
+
+/* ----------- main ------------ */
+
+#first-article {
+  border: 1px solid black;
+  height: 90vh;
+  min-height: 50vh;
+  width: 100vw;
+  min-width: 100vw;
+  display: flex;
+  gap: .5rem;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#first-article > h2 {
+  border: 1px solid black;
+  width: 100%;
+  height: fit-content;
+  min-width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-size: var(--font-size-big);
+  text-transform: capitalize;
+  letter-spacing: .2rem;
+  word-spacing: .5rem;
+  
+}
+
+.cards-box {
+  border:1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  min-width: 79vw;
+  height: 60vh;
+}
+
+.card {
+  border: 1px solid green;
+  width: 25vw;
+  height: 80%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: flex-end;
+  
+  
+}
+
+.card > h3 {
+  border: .1rem solid rgba(255, 255, 255, 0.315);
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+  background-color: rgba(0, 0, 0, 0.507);
+  color: white;
+  display: inline-block;
+  height: 5vh;
+  min-height: 4vh;
+  font-size: var(--font-size-h3);
+  margin-bottom: 30%;
+  padding: .5rem .2rem 0rem .3rem;
+  
+}
+
+.card > p {
+  font-size: var(--font-size-p);
+  font-family: sans-serif;
+  padding: .2rem .9rem 0 .9rem;
+  text-align: justify;
+  line-height: 1.3rem;
+  
+  
+}
+
+.card-1 {
+  background-image: url(imagens/curso-design.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+.card-2 {
+  background-image: url(imagens/curso-design-1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+.card-3 {
+  background-image: url(imagens/curso-design-2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+
+.card-3 > p {
+  font-size: var(--font-size-p3);
+}
+
+#first-article > a {
+  color: var(--font-color-text);
+  background-color: yellow;
+  order: 3;
+  border-radius: .5rem;
+  text-decoration: none;
+  font-size: clamp(.8rem, 1.5vw, 3rem);
+  font-weight: bold;
+  padding: 1rem 3rem 1rem 3rem;
+  margin-top: .2rem;
+  
+  
+}
+
+#first-article > a:hover {
+  background-color: var(--font-color-link);
+  color: var(--font-color-text);
+  font-weight: bolder;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.24);
+
+}
+
+
+/* ----- main - second article ----- */
+
+#second-article {
+  border: 1px solid black;
+  background-color: rgb(10, 10, 138);
+  height: 80vh;
+  min-height: 30rem;
+  background-image: url(imagens/nossa-escola.png);
+  background-position: left bottom;
+  background-size: 40%;
+  background-position-x: 10%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content-second-article {
+  width: 50vw;
+  min-width: 45vw;
+  color: white;
+}
+
+.content-second-article > h2,p {
+  margin-top: 3rem;
+  margin-right: 3rem;
+}
+
+.content-second-article > h2 {
+  font-size: var(--font-size-big);
+  text-transform: capitalize;
+}
+
+.content-second-article > p {
+  font-size: var(--font-size-p);
+  line-height: clamp(1rem, 3vw, 3rem);
+}
+
+/* ----- main - third article ----- */
+
+#third-article {
+  border: 2px solid green;
+  width: 100vw;
+  height: 85vh;
+  min-width: 30rem;
+  min-height: 30rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#third-article > h2 {
+  border: 1px solid black;
+  width: 100vw;
+  height: 10vh;
+  min-height: 5vh;
+  text-align: center;
+  display: inline-block;
+  padding-top: 1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: var(--font-size-h3);
+  letter-spacing: .7rem;
+}
+
+#third-article > img {
+  width: 90vw;
+  min-width: 80vw;
+  height: 55vh;
+  min-height: 50vh;
+}
+
+.contact-inf {
+  height: fit-content;
+  width: 85vw;
+  min-width: 80vw;
+  display: flex;
+  justify-content: flex-end;
+  font-size: var(--font-size-p3);
+  
+}
+
+.contact-inf > p {
+  height: fit-content;
+  margin: 0;
+  padding: .5rem;
+  font-weight: bold;
+  
+}
+
+/* footer */
+
+footer {
+  background-color: black;
+  height: 10vh;
+  min-height: 5vh;
+  color: white;
+  font-size: var(--font-size-p);
+  text-align: center;
+  
+}
+
+footer > p {
+  margin: 0;
+  padding-top: 1rem
 }
