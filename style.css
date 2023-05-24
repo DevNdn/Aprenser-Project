@@ -47,14 +47,15 @@ header {
   min-width: var(--min-width-all);
   max-width: var(--max-width-all);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   
   
 }
 
 .aprenser-logo {
-  width: 15%;
-  min-width: fit-content;
+  border: 1px solid red;
+  width: 50vw;
+  min-width: 30vw;
   
 }
 
@@ -151,7 +152,7 @@ header {
 
 /* ----------- main ------------ */
 
-#first-article {
+#cursos {
   width: var(--width-all);
   min-width: var(--min-width-all);
   max-width: var(--max-width-all);
@@ -166,7 +167,7 @@ header {
   
 }
 
-#first-article > h2 {
+#cursos > h2 {
   width: 100%;
   height: fit-content;
   min-width: 50%;
@@ -256,7 +257,7 @@ header {
   font-size: var(--font-size-p3);
 }
 
-#first-article > a {
+#cursos > a {
   color: var(--font-color-text);
   background-color: yellow;
   border-radius: .5rem;
@@ -271,7 +272,7 @@ header {
   
 }
 
-#first-article > a:hover {
+#cursos > a:hover {
   background-color: var(--font-color-link);
   color: var(--font-color-text);
   font-weight: bolder;
@@ -282,7 +283,7 @@ header {
 
 /* ----- main - second article ----- */
 
-#second-article {
+#nossa-escola {
   background-color: rgb(10, 10, 138);
   width: var(--width-all);
   min-width: var(--min-width-all);
@@ -330,7 +331,7 @@ header {
 
 /* ----- main - third article ----- */
 
-#third-article {
+#contatos {
   background-color: antiquewhite;
   width: var(--width-all);
   min-width: var(--min-width-all);
@@ -342,7 +343,7 @@ header {
   justify-content: center;
 }
 
-#third-article > h2 {
+#contatos > h2 {
   
   width: 95vw;
   height: 10vh;
@@ -356,7 +357,7 @@ header {
   letter-spacing: .7rem;
 }
 
-#third-article > img {
+#contatos > img {
   width: 90vw;
   min-width: 80vw;
   height: 55vh;
