@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
 :root {
   --font-color-link: yellow;
   --font-color-text: black;
@@ -14,6 +16,7 @@
   --height-all: 85vw;
   --min-height-all: 70vw;
   --max-height-all: 90vw;
+  --background-color-primary: #fed001;
 }
 
 * {
@@ -33,29 +36,44 @@ body {
   
 }
 
+.container {
+  max-width: 127.6rem;
+  margin: auto;
+}
+
+#wrapperContainer-dark {
+  background-color: #2a2a2a;
+}
+#wrapperContainer-light {
+  background-color: #fafafa;
+}
+
+#wrapperContainer-dark2 {
+  background-color: #003464;
+}
+
 header {
   height: fit-content;
   min-height: fit-content;
-  width: var(--width-all);
   min-width: var(--min-width-all);
   max-width: var(--max-width-all);
 }
 
 #header-bar {
-  background-color: rgba(0, 0, 0, 0.767);
+  background-color: #2a2a2a;
   width: var(--width-all);
   min-width: var(--min-width-all);
   max-width: var(--max-width-all);
   display: flex;
   justify-content: space-between;
-  
-  
+ 
 }
 
 .aprenser-logo {
-  width: 15%;
-  min-width: fit-content;
-  
+  text-align: center;
+  width: 40vw;
+  min-width: 40%;
+  display: inline-block;
 }
 
 .menu-bar { 
@@ -63,31 +81,29 @@ header {
   min-width: fit-content;
   max-width: var(--max-width-all);
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  gap: .8rem;
+  gap: .5rem;  
   
 }
 
-.aprenser-logo {
-  text-align: center;
-  min-width: 25%;
-}
 
 .menu-bar > a {
-  color: var(--font-color-link);
+  color: var(--background-color-primary);
   text-decoration: none;
-  border: 1px solid yellow;
-  padding: 1.2rem;
+  display: inline-block;
+  border: 1px solid #fed001;
+  padding: 1rem .5rem;
   text-align: center;
   text-transform: uppercase;
-  width: 15%;
-  min-width: 10%;
-  font-size: clamp(0.6rem, .8vw, 1rem);
+  width: clamp(1rem, 12vw, 7rem);
+  min-width: fit-content;
+  font-size: clamp(.5rem, 1vw, 1.2rem);
   font-weight: bold;
   border-radius: .5rem;
   
 }
+
 
 .menu-bar > a:hover {
   background-color: var(--font-color-link);
@@ -97,14 +113,19 @@ header {
 
 }
 
+.wrapperContainer-hero {
+  background-image: linear-gradient(transparent, rgb(247, 203, 59));
+}
+
 #top-article {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  
-  height: 100vh;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Inter', sans-serif;
+  padding-top: 1rem;
+  height: 80vh;
   min-height: 75vh;
-  max-height: 90vh;
+  max-height: 80vh;
   
 }
 
@@ -120,17 +141,16 @@ header {
 
 #top-article-content {
   border: 1px solid black;
-  width: 30%;
-  min-width: 20%;
-  max-width: 35%;
-  height: 25vh;
+  width: 40vw;
+  min-width: 25%;
+  max-width: 43%;
+  height: 45vh;
   min-height: fit-content;
-  padding: .2rem .2rem .3rem .5rem;
-  margin-left: 3rem;
-  word-wrap: break-word;
   font-weight: bold;
-  flex-grow: 2;
-  font-size: clamp(1rem, 3vw, 8rem);
+  flex-grow: 1;
+  margin-top: 3rem;
+  text-align: justify;
+  
   
 }
 
@@ -139,20 +159,26 @@ header {
   padding: 0.2rem;
   margin-bottom: .5rem;
   word-break: keep-all;
-  
+  font-size: clamp(1rem, 5vw, 10rem);
+}
+
+.upper {
+  text-transform: uppercase;
 }
 
 #top-article-content > a {
   color: var(--font-color-text);
-  background-color: yellow;
+  background-color: #fed001;
   border-radius: .5rem;
   text-decoration: none;
   font-size: clamp(.5rem, 1.2vw, 2rem);
   font-weight: bold;
   padding: 1rem 1rem 1rem 1rem;
   text-align: center;
-  margin: 0 auto;
-  width: clamp(.5rem, 12vw, 7rem);
+  margin-left: 20%;
+  display: inline-block;
+  width: clamp(.8rem, 15vw, 10rem);
+  
   
 
 }
@@ -168,6 +194,7 @@ header {
 /* ----------- main ------------ */
 
 #cursos {
+  background-color: antiquewhite;
   width: var(--width-all);
   min-width: var(--min-width-all);
   max-width: var(--max-width-all);
@@ -232,11 +259,11 @@ header {
   height: fit-content;
   min-height: fit-content;
   text-align: center;
-  font-size: clamp(.8rem, 2vw, 2rem);
-  margin: 0;
+  font-size: clamp(.4rem, 2vw, 3rem);
   margin-bottom: clamp(.1rem, 10%, 6rem);
+  margin-top: clamp(0, 1vh, 3rem);
   padding: 1rem;
-  display: block;
+  display: inline-block;
   
   
 }
@@ -247,6 +274,7 @@ header {
   text-align: justify;
   line-height: clamp(.2rem, 4vh, 2rem);
   margin: 0;
+  display: inline-block;
 }
 
 .card-1 {
@@ -274,7 +302,7 @@ header {
 
 #cursos > a {
   color: var(--font-color-text);
-  background-color: yellow;
+  background-color: var(--background-color-primary);
   border-radius: .5rem;
   text-decoration: none;
   text-align: center;
@@ -282,7 +310,7 @@ header {
   font-weight: bold;
   padding: .5rem 1.2rem;
   display: inline-block;
-  width: clamp(5vw, 15%, 15vw);
+  width: clamp(.8rem, 15vw, 10rem);
   height: fit-content;
   min-height: fit-content;
   
@@ -296,7 +324,6 @@ header {
   box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.24);
 
 }
-
 
 /* ----- main - second article ----- */
 
@@ -361,7 +388,6 @@ header {
 }
 
 #contatos > h2 {
-  
   width: 95vw;
   height: 10vh;
   min-height: 5vh;
@@ -396,7 +422,6 @@ address {
   margin: 0;
   padding: .5rem;
   font-weight: bold;
-  
 }
 
 /* footer */
@@ -410,9 +435,7 @@ footer {
   min-height: 3vh;
   color: white;
   font-size: var(--font-size-p);
-  text-align: center;
-  
-  
+  text-align: center;  
 }
 
 footer > p {
