@@ -78,14 +78,15 @@ header {
   min-width: var(--min-width-all);
   max-width: var(--max-width-all);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   
 }
 
 .aprenser-logo {
-  width: 15%;
-  min-width: fit-content;
-  
+  text-align: center;
+  width: 40vw;
+  min-width: 40%;
+  display: inline-block;
 }
 
 .menu-bar { 
@@ -199,7 +200,8 @@ header {
 
 /* ----------- main ------------ */
 
-#first-article {
+#cursos {
+  background-color: antiquewhite;
   width: var(--width-all);
   min-width: var(--min-width-all);
   max-width: var(--max-width-all);
@@ -380,8 +382,7 @@ header {
   justify-content: center;
 }
 
-#third-article > h2 {
-  
+#contatos > h2 {
   width: 95vw;
   height: 10vh;
   min-height: 5vh;
@@ -394,7 +395,7 @@ header {
   letter-spacing: .7rem;
 }
 
-#third-article > img {
+#contatos > iframe {
   width: 90vw;
   min-width: 80vw;
   height: 55vh;
