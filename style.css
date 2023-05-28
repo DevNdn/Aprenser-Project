@@ -258,6 +258,7 @@ header {
 
 .img_card {
   width: 100%;
+  
 }
 
 .card:hover {
@@ -288,6 +289,7 @@ header {
   line-height: clamp(.2rem, 4vh, 2rem);
   display: inline-block;
   padding: 0 .5rem 0 .5rem;
+  height: 8vw;
   
   
 }
@@ -325,7 +327,7 @@ header {
   width: var(--width-all);
   min-width: var(--min-width-all);
   max-width: var(--max-width-all);
-  height: 100vh;
+  height: 80vh;
   max-height: 95vh;
   min-width: 90vh;
   background-image: url(imagens/nossa-escola.png);
@@ -335,16 +337,15 @@ header {
   background-repeat: no-repeat;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .content-second-article {
   width: 50vw;
   min-width: 45vw;
-  height: 90vh;
-  min-height: 80vh;
+  min-height: 50vh;
   color: white;
-  display: inline-block;
-  margin-top: 3rem;
+  
 }
 
 .content-second-article > h2 {
